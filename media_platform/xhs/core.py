@@ -119,6 +119,7 @@ class XiaoHongShuCrawler(AbstractCrawler):
                         sort=SearchSortType(config.SORT_TYPE) if config.SORT_TYPE != '' else SearchSortType.GENERAL,
                     )
                     utils.logger.info(f"[XiaoHongShuCrawler.search] Search notes res:{notes_res}")
+                    # 将小红书爬取的数据，写入到data 目录下
                     semaphore = asyncio.Semaphore(config.MAX_CONCURRENCY_NUM)
                     task_list = [
                         self.get_note_detail(post_item.get("id"), semaphore)
