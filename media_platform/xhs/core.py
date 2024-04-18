@@ -72,7 +72,7 @@ class XiaoHongShuCrawler(AbstractCrawler):
             if not await self.xhs_client.pong():
                 login_obj = XiaoHongShuLogin(
                     login_type=self.login_type,
-                    login_phone="",  # input your phone number
+                    login_phone="13271368636",  # input your phone number
                     browser_context=self.browser_context,
                     context_page=self.context_page,
                     cookie_str=config.COOKIES
