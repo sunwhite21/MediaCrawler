@@ -1,6 +1,6 @@
 # 基础配置
-PLATFORM = "xhs"
-KEYWORDS = "如何给宝宝做辅食"
+PLATFORM = "dy"
+KEYWORDS = "sex"
 LOGIN_TYPE = "qrcode"  # qrcode or phone or cookie
 COOKIES = ""
 SORT_TYPE = "popularity_descending"  # 具体值参见media_platform.xxx.field下的枚举值，展示只支持小红书
